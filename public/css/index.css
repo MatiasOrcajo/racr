@@ -1,0 +1,133 @@
+:root{
+    --bold: 'Montserrat-Bold', sans-serif;
+    --regular: 'Montserrat-Regular', sans-serif;
+    --primario: #0246FF;
+    --texto: #023D8C;
+}
+
+.container-fluid{
+    overflow-x: hidden;
+}
+
+.nuestros-sitios-SSL{
+    background-color: rgba(240, 246, 255, 1);
+}
+
+.row {
+    padding-left: 155px;
+    padding-right: 155px;
+}
+
+@media(max-width: 1600px){
+    .row {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media(max-width: 900px){
+    .row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* header */
+
+li{
+    font-family: var(--bold);
+    color: white;
+    font-size: 16px;
+}
+
+.whatsapp{
+    background-color: var(--primario);
+    font-family: var(--bold);
+    color: white;
+    font-size: 16px;
+}
+
+.whatsapp i{
+    font-size: 28px;
+}
+
+
+/* hero */
+
+h1{
+    font-family: var(--bold);
+    color: white;
+    font-size: 50px;
+}
+
+.hero p{
+    font-family: var(--bold);
+    color: white;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.btn-primary{
+    background-color: var(--primario)!important;
+    font-family: var(--bold);
+    color: white;
+    font-size: 16px;
+}
+
+
+/* seccion principal */
+h2{
+    font-family: var(--bold);
+    font-size: 40px;
+    color: var(--texto);
+}
+
+h3{
+    font-family: var(--bold);
+    font-size: 35px;
+    color: var(--primario); 
+}
+
+.contenido-principal p{
+    font-family: var(--regular);
+    color: var(--texto);
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.nuestros-sitios-SSL p{
+    font-family: var(--regular);
+    color: var(--texto);
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.estemos-en-contacto span{
+    font-family: var(--regular);
+    color: var(--texto);
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.contenedor-redes {
+    background-color: #D6E6FD;
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--texto);
+    font-family: var(--bold);
+}
+
+.contenedor-redes i{
+    font-size: 41px;
+    color: var(--texto);
+}
+
+/* formulario */
+
+.estemos-en-contacto form input{
+    height: 40px;
+    border-radius: 5px;
+    background-color: #D6E6FD;
+    border: none;
+}
