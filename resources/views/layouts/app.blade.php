@@ -40,7 +40,7 @@
     <script src="https://kit.fontawesome.com/1231344c8f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="position-fixed intro" style="background-image: url({{asset('images/welcome.png')}}); height: 100vh; width: 100vw; z-index: 999999999999999; background-position: center; background-size: cover; background-repeat: no-repeat;"></div>
+    {{-- <div class="position-fixed intro" style="background-image: url({{asset('images/welcome.png')}}); height: 100vh; width: 100vw; z-index: 999999999999999; background-position: center; background-size: cover; background-repeat: no-repeat;"></div> --}}
     @include('front.partials.header')
     @yield('content')
     @include('front.partials.footer')
@@ -64,9 +64,9 @@
         const titulo = CSSRulePlugin.getRule('.titulo:before');
         const titulo_texto = CSSRulePlugin.getRule('.texto-titulo:before');
 
-        gsap.to('.intro', {top: '-100%', duration: 1, delay: 2.5}); /*3,5s*/
+        // gsap.to('.intro', {top: '-100%', duration: 1, delay: 2.5}); /*3,5s*/
         gsap.to(titulo, {cssRule: {scaleY:0}, duration: .5, delay: 3.5,});/*4,5s*/
-        gsap.to(titulo_texto, {cssRule: {scaleY: 0}, duration: .2, delay: 4.3});/*4,7s*/
+        gsap.from('.img-logo', {y:40, opacity: 0, delay: 3.2});
 
     </script>
 
