@@ -133,6 +133,18 @@ h1{
     border: white;
 }
 
+.logo-titulo-texto{
+    z-index: 99;
+    transform: translateY(-150px)
+}
+
+@media(max-width: 750px){
+    .logo-titulo-texto{
+        z-index: 99;
+        transform: translateY(-50px)
+    }
+}
+
 
 /* seccion principal */
 h2{
@@ -175,12 +187,31 @@ h3{
     font-size: 16px;
     color: var(--texto);
     font-family: var(--bold);
+    opacity: 0;
+    width: 50%;
+}
+
+@media(max-width: 1200px){
+    .contenedor-redes {
+        background-color: #D6E6FD;
+        border-radius: 5px;
+        font-size: 16px;
+        color: var(--texto);
+        font-family: var(--bold);
+        opacity: 0;
+        width: 100%;
+    }
+
+    .contenedor-de-contenedor-redes{
+        width: 100%;
+    }
 }
 
 .contenedor-redes i{
     font-size: 41px;
     color: var(--texto);
 }
+
 
 /* formulario */
 
@@ -214,4 +245,21 @@ h3{
     font-family: var(--bold);
     font-size: 16px;
     text-align: center;
+}
+
+.formulario .form-group::placeholder,textarea::placeholder{
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 16px;
+    color: var(--texto);
+    opacity: 1;
+}
+
+@media(max-width: 1200px){
+    .formulario input, .formulario textarea, .formulario select{
+        width: 100%!important;
+    }
+
+    .formulario button{
+        width: 100%!important;
+    }
 }

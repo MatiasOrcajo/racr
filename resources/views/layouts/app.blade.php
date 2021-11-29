@@ -47,6 +47,7 @@
     
     {{-- scripts propios --}}
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('js/scripts.js')}}"></script>
     {{-- <script src="{{asset('js/scripts.js')}}"></script> --}}
     {{-- jquery --}}
 
@@ -67,6 +68,27 @@
         // gsap.to('.intro', {top: '-100%', duration: 1, delay: 2.5}); /*3,5s*/
         gsap.to(titulo, {cssRule: {scaleY:0}, duration: .5, delay: 3.5,});/*4,5s*/
         gsap.from('.img-logo', {y:40, opacity: 0, delay: 3.2});
+
+
+        const boxes = document.querySelectorAll('.contenedor-redes');
+
+        function cb (entries){
+            entries.forEach(entry => {
+                if(entry.isIntersecting && !entry.target.classList.contains('gsap')){
+                    gsap.to(entry.target, {opacity: 1, duration:2});
+                    gsap.from(entry.target, {x: '-90', duration:2});
+                    entry.target.classList.add('gsap')
+                }
+            })
+        }
+
+        const options = {
+            rootMargin: '-50px',
+        }
+
+        const observer = new IntersectionObserver(cb, options);
+
+        boxes.forEach(el => observer.observe(el));
 
     </script>
 
