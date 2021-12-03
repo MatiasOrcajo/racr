@@ -1,4 +1,4 @@
-<header style="background: #4678BF">
+<header style="background: #4678BF; top: 0; z-index: 999999" class="w-100">
   <nav class="navbar px-md-5 w-100 d-none d-md-block" style="top: 0; z-index: 999999999">
     <div class="container-fluid padding-x">
       <div class="logo" style="width: 250px">

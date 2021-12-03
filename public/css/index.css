@@ -34,10 +34,41 @@
 
 /* header */
 
+header{
+    position:unset
+}
+
+@media(max-width: 900px){
+    header{
+        position: fixed;
+    }
+}
+
 li{
     font-family: var(--bold);
     color: white;
     font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+li::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    transition: width .3s;
+    width: 0%;
+    height: 1px;
+    background: white;
+}
+
+li:hover::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    transition: width .3s;
+    width: 100%;
+    background: white;
 }
 
 .whatsapp{
@@ -69,11 +100,28 @@ h1{
     font-size: 50px;
 }
 
+@media(max-width: 750px){
+    h1{
+        font-family: var(--bold);
+        color: white;
+        font-size: 40px;
+    }
+}
+
 .hero p{
     font-family: var(--bold);
     color: white;
     font-size: 25px;
     line-height: 30px;
+}
+
+@media(max-width: 750px){
+    .hero p{
+        font-family: var(--bold);
+        color: white;
+        font-size: 21px;
+        line-height: 30px;
+    }
 }
 
 .btn-primary{
@@ -147,6 +195,17 @@ h1{
 
 
 /* seccion principal */
+
+.imagen-ondas{
+    transform: translateY(550px);
+}
+
+@media(min-width: 1920px){
+    .imagen-ondas{
+        transform: translateY(450px);
+    }
+}
+
 h2{
     font-family: var(--bold);
     font-size: 40px;
@@ -261,5 +320,38 @@ h3{
 
     .formulario button{
         width: 100%!important;
+    }
+}
+
+
+
+/* SUBIR AL INICIO */
+
+.up{
+    bottom: 0;
+    right: 0;
+    margin-bottom: 25px;
+    z-index: 9999999999999999999999999999999;
+    transition: opacity 1s;
+    opacity: 0;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    background: var(--primario);
+    border-radius: 50%;
+}
+
+@media(max-width: 900px){
+    .up{
+        bottom: 0;
+        right: 0;
+        margin-bottom: 0;
+        z-index: 9999999999999999999999999999999;
+        transition: opacity 1s;
+        opacity: 0;
+        height: 60px;
+        width: 60px;
+        background: var(--primario);
+        border-radius: 50%;
     }
 }

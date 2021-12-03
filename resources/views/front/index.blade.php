@@ -15,7 +15,7 @@
     background-size: cover;
     z-index: 0"></div>
     <div class="row d-flex flex-column align-items-center mx-0 mt-0 w-100 logo-titulo-texto">
-        <div class="col-12 p-0 hero text-center mt-0 mb-lg-5" id="inicio">
+        <div class="col-12 p-0 hero text-center mt-0 mb-lg-0 mb-xxl-5 mt-lg-5 mt-xxl-0" id="inicio">
             <img src="{{asset('images/racr/logo.png')}}" class="mt-5 mb-lg-5 img-logo" alt="" style="width: 100px">
             <h1 class="mb-4 titulo">¡Bienvenidos! Somos Racr Soft.</h1>
             <p class="mb-5 texto-titulo">Ofrecemos sitios web adaptados a cada necesidad,<br> acompañando a cada cliente en cómo mostrar su <br>empresa en internet.</p>
@@ -25,52 +25,53 @@
 </div>
 
 
-<div class="container-fluid p-0">
+<div class="container-fluid p-0 position-relative">
 
+    <img src="{{asset('images/racr/ondas.png')}}" alt="" class="w-100 position-absolute imagen-ondas d-lg-block d-none">
     <section class="pb-5" id="productos">
         <div class="row pb-5 d-none d-lg-block" style="margin-top: 150px" >
             <h2 class="text-center">Elegí el sitio web adaptado a tu medida</h2>
             <div class="col-12 d-flex flex-wrap mt-5 contenido-principal">
-                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column"style="z-index: 999">
                     <div>
                         <h3 class="my-4">Landing Page*</h3>
                         <p class="my-4">Te ofrecemos un sitio simple, pero elegante y funcional para poder marcar el inicio de tu identidad online.</p>
                         <div class="btn btn-primary rounded-pill px-4">Ver ejemplos <i class="fas fa-chevron-right ms-3"></i></div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column"style="z-index: 999">
                     <div data-aos="zoom-in" data-aos-duration="1500">
-                        <img src="{{asset('images/racr/fondo-webs.jpg')}}" alt="">
+                        <img src="{{asset('images/racr/fondo-webs.png')}}" alt="">
                     </div>
                 </div>
             </div>
 
             <div class="col-12 d-flex flex-row-reverse flex-wrap mt-5 contenido-principal">
-                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column" style="z-index: 999">
                     <div>
                         <h3 class="my-4">Página Con Secciones*</h3>
                         <p class="my-4">Te ofrecemos un sitio, en el cual podés contar parte de tu historia, los objetivos que tengas, y los servicios y/o productos que estas ofreciendo al público en general.</p>
                         <div class="btn btn-primary rounded-pill px-4">Ver ejemplos <i class="fas fa-chevron-right ms-3"></i></div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column" style="z-index: 999">
                     <div data-aos="zoom-in" data-aos-duration="1500">
-                        <img src="{{asset('images/racr/fondo-webs.jpg')}}" alt="">
+                        <img src="{{asset('images/racr/fondo-webs.png')}}" alt="">
                     </div>
                 </div>
             </div>
 
             <div class="col-12 d-flex flex-wrap mt-5 contenido-principal">
-                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column"style="z-index: 999">
                     <div>
                         <h3 class="my-4">E-Commerce*</h3>
                         <p class="my-4">Te ofrecemos con esta opción que tus productos estén al alcance del publico en general, con las opciones de retiro-envío que más les convengan a tus clientes, y las opciones de pago variadas  (efectivo, transferencia, MERCADO PAGO)</p>
                         <div class="btn btn-primary rounded-pill px-4">Ver ejemplos <i class="fas fa-chevron-right ms-3"></i></div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column"style="z-index: 999">
                     <div data-aos="zoom-in" data-aos-duration="1000">
-                        <img src="{{asset('images/racr/fondo-webs.jpg')}}" alt="">
+                        <img src="{{asset('images/racr/fondo-webs.png')}}" alt="">
                     </div>
                 </div>
             </div>
@@ -89,30 +90,30 @@
             <h2 class="text-center">Elegí el sitio web adaptado a tu medida</h2>
 
             <div class="col-12 d-flex flex-wrap mt-5 contenido-principal px-0">
-                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column"style="z-index: 999">
                     <div>
                         <h3 class="my-4">Landing Page*</h3>
                         <div data-aos="zoom-in" data-aos-duration="1500">
-                            <img src="{{asset('images/racr/fondo-webs.jpg')}}" alt="" style="max-width: 100%">
+                            <img src="{{asset('images/racr/fondo-webs.png')}}" alt="" style="max-width: 100%">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column"style="z-index: 999">
                     <p class="my-4">Te ofrecemos un sitio simple, pero elegante y funcional para poder marcar el inicio de tu identidad online.</p>
                     <div class="btn btn-primary rounded-pill w-100 position-relative px-4 ">Ver ejemplos <i class="fas position-absolute fa-chevron-right me-3 ms-3" style="right: 0; top: 0; transform: translateY(50%)"></i></div>
                 </div>
             </div>
 
             <div class="col-12 d-flex flex-wrap mt-5 contenido-principal px-0">
-                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column"style="z-index: 999">
                     <div>
                         <h3 class="my-4">Página con secciones*</h3>
                         <div data-aos="zoom-in" data-aos-duration="1500">
-                            <img src="{{asset('images/racr/fondo-webs.jpg')}}" alt="" style="max-width: 100%">
+                            <img src="{{asset('images/racr/fondo-webs.png')}}" alt="" style="max-width: 100%">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column"style="z-index: 999">
                     <p class="my-4">Te ofrecemos un sitio, en el cual podés contar parte de tu historia, los objetivos que tengas, y los servicios y/o productos que estas ofreciendo al público en general.</p>
                     <div class="btn btn-primary rounded-pill w-100 position-relative px-4 ">Ver ejemplos <i class="fas position-absolute fa-chevron-right me-3 ms-3" style="right: 0; top: 0; transform: translateY(50%)"></i></div>
                 </div>
@@ -120,15 +121,15 @@
 
 
             <div class="col-12 d-flex flex-wrap mt-5 contenido-principal px-0">
-                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column"style="z-index: 999">
                     <div>
                         <h3 class="my-4">E-Commerce*</h3>
                         <div data-aos="zoom-in" data-aos-duration="1500">
-                            <img src="{{asset('images/racr/fondo-webs.jpg')}}" alt="" style="max-width: 100%">
+                            <img src="{{asset('images/racr/fondo-webs.png')}}" alt="" style="max-width: 100%">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column"style="z-index: 999">
                     <p class="my-4">Te ofrecemos con esta opción que tus productos estén al alcance del publico en general, con las opciones de retiro-envío que más les convengan a tus clientes, y las opciones de pago variadas  (efectivo, transferencia, MERCADO PAGO)</p>
                     <div class="btn btn-primary rounded-pill w-100 position-relative px-4 ">Ver ejemplos <i class="fas position-absolute fa-chevron-right me-3 ms-3" style="right: 0; top: 0; transform: translateY(50%)"></i></div>
                 </div>
@@ -267,6 +268,13 @@
         </div>
     </section>
        
+</div>
+
+
+{{-- scroll up --}}
+
+<div class="position-fixed me-lg-3 up justify-content-center align-items-center d-flex" style="">
+    <i class="fas fa-chevron-up" style="color: white; font-size: 40px"></i>
 </div>
 
 
