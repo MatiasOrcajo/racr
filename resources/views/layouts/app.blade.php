@@ -40,7 +40,7 @@
     <script src="https://kit.fontawesome.com/1231344c8f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="position-fixed intro d-flex justify-content-center align-items-center" style="background: transparent radial-gradient(closest-side at 50% 50%, #063D8C 0%, #031F46 100%); height: 100vh; width: 100vw; z-index: 999999999999999;"> --}}
+    <div class="position-fixed intro d-flex justify-content-center align-items-center" style="background: transparent radial-gradient(closest-side at 50% 50%, #063D8C 0%, #031F46 100%); height: 100vh; width: 100vw; z-index: 999999999999999;">
         <img src="{{asset('images/racr/logo-blanco.png')}}" alt="">
     </div>
     @include('front.partials.header')
