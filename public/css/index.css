@@ -18,10 +18,18 @@
     padding-right: 155px;
 }
 
+img-logo{
+    width: 130px;
+}
+
 @media(max-width: 1600px){
     .row {
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    img-logo{
+        width: 100px;
     }
 }
 
@@ -39,9 +47,9 @@ header{
 }
 
 @media(max-width: 900px){
-    header{
+    /* header{
         position: fixed;
-    }
+    } */
 }
 
 li{
@@ -284,14 +292,12 @@ h3{
 .estemos-en-contacto select{
     height: 40px;
     color: var(--texto);
-    width: 75%;
     background: #D6E6FD;
     border: none;
     border-radius: 5px;
 }
 
 .estemos-en-contacto textarea{
-    width: 75%;
     background: #D6E6FD !important;
     border: none;
     border-radius: 5px;
@@ -306,7 +312,7 @@ h3{
     text-align: center;
 }
 
-.formulario .form-group::placeholder,textarea::placeholder{
+.form-group input::placeholder,textarea::placeholder{
     font-family: 'Montserrat-Regular', sans-serif;
     font-size: 16px;
     color: var(--texto);
@@ -320,6 +326,16 @@ h3{
 
     .formulario button{
         width: 100%!important;
+    }
+}
+
+.width-en-formulario, form button{
+    width: 60%;
+}
+
+@media(max-width: 900px){
+    width-en-formulario, form button{
+        width: 95%;
     }
 }
 
@@ -345,12 +361,12 @@ h3{
     .up{
         bottom: 0;
         right: 0;
-        margin-bottom: 0;
+        margin: 10px;
         z-index: 9999999999999999999999999999999;
         transition: opacity 1s;
         opacity: 0;
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
         background: var(--primario);
         border-radius: 50%;
     }

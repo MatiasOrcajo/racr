@@ -41,7 +41,7 @@
 </head>
 <body>
     <div class="position-fixed intro d-flex justify-content-center align-items-center" style="background: transparent radial-gradient(closest-side at 50% 50%, #063D8C 0%, #031F46 100%); height: 100vh; width: 100vw; z-index: 999999999999999;">
-        <img src="{{asset('images/racr/logo-blanco.png')}}" alt="">
+        <img src="{{asset('images/racr/logo-blanco.png')}}" alt="" style="width: 150px">
     </div>
     @include('front.partials.header')
     @yield('content')
@@ -67,9 +67,10 @@
         const titulo = CSSRulePlugin.getRule('.titulo:before');
         const titulo_texto = CSSRulePlugin.getRule('.texto-titulo:before');
 
-        gsap.to('.intro', {top: '-100%', duration: 1, delay: 2.5}); /*3,5s*/
-        gsap.to(titulo, {cssRule: {scaleY:0}, duration: .5, delay: 3.5,});/*4,5s*/
-        gsap.from('.img-logo', {y:40, opacity: 0, delay: 3.2});
+        gsap.to('.intro', {opacity: 0, duration: 1, delay: 2.5}); /*3,5s*/
+        gsap.to(titulo, {cssRule: {scaleY:0}, duration: .5, delay: 3.7,});/*4,5s*/
+        gsap.to('.intro', {top: '-100%', duration: 1, delay: 3.8});
+        gsap.from('.img-logo', {y:40, opacity: 0, delay: 3.4});
 
 
         const boxes = document.querySelectorAll('.contenedor-redes');

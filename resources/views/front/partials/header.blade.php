@@ -35,7 +35,7 @@
           </a>
       </div>
 
-      <button class="border-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse" style="border: none"><i class="fas fa-bars" style="color: red; font-size: 30px"></i></button>
+      <button class="border-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse" style="border: none"><i class="fas fa-bars" style="color: #F0F6FF; font-size: 30px"></i></button>
         
     </div>
     <div class="d-flex justify-content-center align-items-center">
